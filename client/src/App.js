@@ -1,8 +1,10 @@
 import './App.css';
+import SolarSystemContainer from './containers/SolarSystemContainer';
+
 
 function App() {
   return (
-    <h1> boo! </h1>
+    <SolarSystemContainer />
   );
 }
 
