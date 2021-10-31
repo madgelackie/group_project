@@ -130,20 +130,20 @@ db.quiz.insertMany([
             {
                 question:"Why is Mars red?",
                 answerCorrect:"Iron oxide in the rock",
-                answerWrong1:"Alien’s painted it red",
+                answerWrong1:"Aliens painted it red",
                 answerWrong2: "It is covered with tomato plants"
             },
             {
                 question:"How long is a day on Mars?",
-                answerCorrect:"almost the same as on Earth",
+                answerCorrect:"Almost the same as on Earth",
                 answerWrong1:"3 hours long",
                 answerWrong2: "50 hours long"
             },
             {
                 question:"Mercury is:",
-                answerCorrect:"The closest planet to the sun",
-                answerWrong1:"The furthest planet from the sun",
-                answerWrong2: "The 5th planet from the sun"
+                answerCorrect:"The closest planet to the Sun",
+                answerWrong1:"The furthest planet from the Sun",
+                answerWrong2: "The 5th planet from the Sun"
             },
             {
                 question:"Which planet is the hottest?",
