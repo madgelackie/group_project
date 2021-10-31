@@ -1,7 +1,7 @@
 use solar_system;
 db.dropDatabase();
 
-db.planets.insertMany([
+db.planets.insertMany(
     {
         name:"Sun",
         image:"https://scitechdaily.com/images/Sun-Star-Animation.gif",

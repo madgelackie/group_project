@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react'
+import PlanetList from '../components/PlanetList'
+import PlanetDetail from '../components/PlanetDetail'
 
 const baseURL = 'http://localhost:5000/api/planets'
 
@@ -7,6 +9,7 @@ const baseURL = 'http://localhost:5000/api/planets'
 const SolarSystemContainer = () => {
 
     const [planets, setPlanets] = useState([])
+    const [selectedPlanet, setSelectedPlanet] = useState(null);
 
     useEffect(() => {
         return fetch(baseURL)
@@ -15,14 +18,14 @@ const SolarSystemContainer = () => {
     })
 
 
-    const planetDetail = planets.map((planet, index) => {
-        return <li key={index}>{planet.name}</li>
-    })
+    const onPlanetClick = (planet) => {
+        setSelectedPlanet(planet);
+    }
 
     return (
         <>
-            <h1>Happy planet spinning</h1>
-            <ul>{planetDetail}</ul>
+            <PlanetList planets={planets} onPlanetClick={onPlanetClick}/>
+            {/* <PlanetDetail planet = {selectedPlanet}/> */}
         </>
     )
 }
