@@ -1,30 +1,30 @@
 import React from 'react';
 
+import Planet from './Planet';
+import './PlanetList.css'
+
 const PlanetList = ({planets, onPlanetClick}) => {
     
-    const handlePlanetSelect = function (event) {
-        const planet = planets[event.target.value];
-        onPlanetClick(planet);
-    }
-
-    const planetDetail = planets.map((planet, index) => {
-       
-       return <div key={index}>
-               <li value={index} onPlanetClick={handlePlanetSelect}>{planet.name}</li>
-               <img src={planet.image} width="200"/>
-               </div>
+    const planetItems = planets.map((planet,index)=>{
+        return <Planet planet = {planet} key = {index} onPlanetClick = {onPlanetClick}/>
     })
+
+   
+       
+      
+
 
 
 
 
     return (
-        <div>
+        <div id= "planet-list">
         <ul>
-        {planetDetail}
+        {planetItems}
         </ul>
         </div>
             )
+
 
 
 }
