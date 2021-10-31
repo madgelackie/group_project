@@ -25,7 +25,7 @@ const SolarSystemContainer = () => {
     return (
         <>
             <PlanetList planets={planets} onPlanetClick={onPlanetClick}/>
-            {/* <PlanetDetail planet = {selectedPlanet}/> */}
+            {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
         </>
     )
 }
