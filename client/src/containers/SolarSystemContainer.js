@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import PlanetList from '../components/PlanetList'
 import PlanetDetail from '../components/PlanetDetail'
 
+
 const baseURL = 'http://localhost:5000/api/planets'
 
 
@@ -18,6 +19,7 @@ const SolarSystemContainer = () => {
     })
 
 
+
     const onPlanetClick = (planet) => {
         setSelectedPlanet(planet);
     }
@@ -26,6 +28,7 @@ const SolarSystemContainer = () => {
         <>
             <PlanetList planets={planets} onPlanetClick={onPlanetClick}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
+
         </>
     )
 }
