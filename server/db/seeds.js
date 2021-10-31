@@ -61,14 +61,14 @@ db.planets.insertMany([
             {
                 name:"Mars",
                 image:"https://i.pinimg.com/originals/34/ad/ba/34adba7b0e23a882620c9b989d76640e.gif",
-                description:" ",
-                avgTemperature: "-60 degrees celcius",
+                description:"Also knows as the ‘Red Planet’, Mars is the second smallest planet in our solar system, about half the size of Earth.  Although it’s red in colour, it isn’t very hot there - the warmest it gets is like a warmish day on Earth but most of the time it is much colder than Earth.  If you spot the tiny dot of Mars in our night sky, it will have a reddish tint, and when seen through a telescope it’s a reddish-orange colour - this is because there is lots of iron oxide in the rock that makes up it’s surface.  That’s the same thing that gives rusty metal its orange colour.  Space scientists are working hard to develop spacecraft and technology to get humans to Mars. ",
+                avgTemperature: "-65 degrees celcius",
                 distanceFromTheSun: "242.1 million km",
-                lengthOfDay: "24 hours",
+                lengthOfDay: "24.7 hours",
                 lengthOfYear: "687 Earth days",
-                sizeRadius:"3.386 km",
+                sizeRadius:"3,386 km",
                 noOfMoons: 2,
-                funFact:""
+                funFact:"You could jump around three times higher on Mars than you can on Earth. Boing! This is because the planet’s gravity – the force that keeps us on the ground – is much weaker."
             },
             {
                 name:"Jupiter",
