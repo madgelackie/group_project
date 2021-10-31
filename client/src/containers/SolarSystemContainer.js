@@ -7,7 +7,8 @@ const baseURL = 'http://localhost:5000/api/planets'
 
 const SolarSystemContainer = () => {
 
-    const [planets, setPlanets] = useState([])
+    const [planets, setPlanets] = useState([]);
+    const [selectedPlanet, setSelectedPlanet] = useState(null);
 
     useEffect(() => {
         return fetch(baseURL)
@@ -15,12 +16,14 @@ const SolarSystemContainer = () => {
         .then(planets => setPlanets(planets))
     })
 
-
+    const onPlanetClick = (planet) => {
+        setSelectedPlanet(planet);
+    }
     
 
     return (
         <>
-            <PlanetList planets={planets}/>
+            <PlanetList planets={planets} onPlanetClick={onPlanetClick}/>
         </>
     )
 }
