@@ -11,7 +11,7 @@ db.planets.insertMany([
     },
     {
         name:"Mercury",
-        image:"https://j.gifs.com/zpNWyy.gif",
+        image:"https://i.gifer.com/Owne.gif",
         description:"The closest planet to the sun, it’s also the smallest planet in our solar system, just a little bigger than our own moon.  The smallest planet title used to go to Pluto, but Pluto has jumped from the planet list to the dwarf. Even though it is the closest to the sun, it isn’t the hottest planet - that prize goes to Venus, Mercury’s neighbour.  The side of Mercury facing the sun gets very hot but the side facing away from the sun can get very very cold, much colder than on Earth.  This is because Mercury doesn’t have an atmosphere like our planet, which helps to keep heat in. ",
         avgTemperature: "167 degrees celsius",
         distanceFromTheSun: "57.9 million km",
@@ -23,7 +23,7 @@ db.planets.insertMany([
     },
     {
         name:"Venus",
-        image:"https://media1.giphy.com/media/l0MYB89UFsVqLY5oc/200.gif",
+        image:"https://i.pinimg.com/originals/dd/7f/7c/dd7f7c8c913aa8cdf8db8038c242aa68.gif",
         description:"Our closest neighbour, it is also the hottest planet in the solar system.  Like Mercury, Earth, Mars and Pluto, Venus is a terrestrial planet - which means it has a solid surface, or land, unlike the gas giant planets (see Jupiter, Saturn, Uranus, Neptune).  It is so hot on Venus that a block of the metal lead would melt much like ice does on a warm day on Earth. Why is it so hot?  It has a thick atmosphere that works like a blanket, keeping heat that arrives from the sun trapped underneath it.",
         avgTemperature: "464 degrees celsius",
         distanceFromTheSun: "108.2 million km",
@@ -35,7 +35,7 @@ db.planets.insertMany([
     },
     {
         name:"Earth",
-        image:"https://techcrunch.com/wp-content/uploads/2016/07/dscover-solar-eclipse.gif",
+        image:"https://ian.macky.net/pat/map/globes/earth-cloudy-256-fast.gif",
         description:"Our planet!  Some scientists call it a ‘Goldilocks planet’ - just the right environment for humans to live on.  Almost 8 billion of us live here!  It has lots of water on its surface - an important ingredient in human life.  No other known planet has oceans like we do, although Europa (one of Jupiter’s many moons) is thought to have an ocean although it is under a very thick layer of ice. ",
         avgTemperature: "15 degrees celcius",
         distanceFromTheSun: "149.6 million km",
@@ -59,7 +59,7 @@ db.planets.insertMany([
     },
     {
         name:"Jupiter",
-        image:"http://www.nasa.gov/sites/default/files/thumbnails/image/spinning_jupiter.gif",
+        image:"https://i.pinimg.com/originals/87/5c/4e/875c4ef8f3e49012a19fcf1c8ec1a0aa.gif",
         description:"Jupiter is a gas giant, just like Saturn. It is made mostly out of hydrogen and helium.It doesn’t have a true surface, but it may have a solid core about the size of Earth at its center.",
         avgTemperature: "-108 degrees celsius",
         distanceFromTheSun: "749.4 million km",
