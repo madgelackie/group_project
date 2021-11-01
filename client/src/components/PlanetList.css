@@ -39,3 +39,5 @@ img:hover {
   ::-webkit-scrollbar-thumb:hover {
     background:darkblue; 
   }
+
+  li{padding:20%;}
