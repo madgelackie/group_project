@@ -13,7 +13,7 @@ const PlanetsSeen = ({seenPlanets}) => {
         <>
             <h3>So far, you have looked at:</h3>
             <p>{seenPlanetsList}</p>
-            <button onClick={handleClearClick}>CLEAR LIST</button>
+            {/* <button onClick={handleClearClick}>CLEAR LIST</button> */}
         </>
     )
 

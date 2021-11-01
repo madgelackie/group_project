@@ -26,6 +26,7 @@ const SolarSystemContainer = () => {
 
     const onPlanetClick = (planet) => {
         setSelectedPlanet(planet);  
+        
         setSeenPlanets([...seenPlanets, planet]) 
     }
 
