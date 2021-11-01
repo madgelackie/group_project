@@ -1,4 +1,6 @@
-li {list-style: none;}
+li {list-style: none;
+  padding:20%;}
+  
 ul {display:flex;
     align-items :center;
     overflow: scroll;
@@ -14,7 +16,7 @@ ul {display:flex;
     margin:auto;
 }
 
-img:hover {
+li:hover {
     height: 500px;
     cursor:url(https://cdn4.iconfinder.com/data/icons/business-management-209/48/transportation_rocket_spaceship_transport_space_shuttle-128.png),auto;
   }
@@ -40,4 +42,4 @@ img:hover {
     background:darkblue; 
   }
 
-  li{padding:20%;}
+  
