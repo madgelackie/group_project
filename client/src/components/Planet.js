@@ -24,20 +24,19 @@ const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
         <button classname="close" onClick={close}>
             &times;
         </button>
-        <div className="header"> Title </div>
+        <div className="header"> {planet.name} </div>
         <div className="content">
           {' '}
-          {planet.name}
+          
           <br />
-         
-          <p>Description:{planet.description}</p>
-          <p>Average Temperature:{planet.avgTemperature}</p>
-          <p>Size(radius):{planet.sizeRadius}</p>
-          <p>Distance From Sun:{planet.distanceFromSun}</p>
-          <p>Length of Day:{planet.lengthOfDay}</p>
-          <p>Length of Year:{planet.lengthOfYear}</p>
-          <p>Number of Moons:{planet.noOfMoons}</p>
-          <p>Fun Fact:{planet.funFact}</p>
+          <p>Description: {planet.description}</p>
+          <p>Average Temperature: {planet.avgTemperature}</p>
+          <p>Size(radius): {planet.sizeRadius}</p>
+          <p>Distance From Sun: {planet.distanceFromTheSun}</p>
+          <p>Length of Day: {planet.lengthOfDay}</p>
+          <p>Length of Year: {planet.lengthOfYear}</p>
+          <p>Number of Moons: {planet.noOfMoons}</p>
+          <p>Fun Fact: {planet.funFact}</p>
         
         </div>
         <div className="actions">

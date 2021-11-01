@@ -19,7 +19,7 @@ db.planets.insertMany([
         lengthOfYear: "88 Earth days",
         sizeRadius:"2,440 km",
         noOfMoons: 0,
-        funFact:"To reach the Sun, it would take 58.6 years if driving at motorway speed, orr 7.9 years if going at the average speed of an aeroplane. "
+        funFact:"To reach the Sun, it would take 58.6 years if driving at motorway speed, or 7.9 years if going at the average speed of an aeroplane. "
     },
     {
         name:"Venus",
