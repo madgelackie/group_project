@@ -29,9 +29,13 @@ const SolarSystemContainer = () => {
         setHoveredPlanet(planet);
     }
 
+    const onPlanetLeave = () => {
+        setHoveredPlanet(null);
+    }
+
     return (
         <>
-            <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover}/>
+            <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
 

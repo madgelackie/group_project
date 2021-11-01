@@ -3,12 +3,12 @@ import React from 'react';
 import Planet from './Planet';
 import './PlanetList.css'
 
-const PlanetList = ({planets, onPlanetClick, onPlanetHover}) => {
+const PlanetList = ({planets, onPlanetClick, onPlanetHover, onPlanetLeave}) => {
 
     
     
     const planetItems = planets.map((planet,index)=>{
-        return <Planet planet = {planet} key = {index} onPlanetClick = {onPlanetClick} onPlanetHover = {onPlanetHover}/>
+        return <Planet planet = {planet} key = {index} onPlanetClick = {onPlanetClick} onPlanetHover = {onPlanetHover} onPlanetLeave={onPlanetLeave}/>
     })
 
    
