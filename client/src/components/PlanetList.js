@@ -18,7 +18,7 @@ const PlanetList = ({planets, onPlanetClick}) => {
 
     return (
         <div id= "planet-list">
-        <ul>
+        <ul id="planet-ul">
         {planetItems}
         </ul>
         </div>
