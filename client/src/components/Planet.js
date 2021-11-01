@@ -7,7 +7,7 @@ const Planet = ({planet, onPlanetClick}) =>{
 
     return (
     
-    <li onClick = {handleClick}><img src={planet.image} width= "200"/></li>)
+    <li onClick = {handleClick}><img src={planet.image} /></li>)
     
     
 }
