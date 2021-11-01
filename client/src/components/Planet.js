@@ -30,13 +30,14 @@ const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
           {planet.name}
           <br />
          
+          <p>Description:{planet.description}</p>
           <p>Average Temperature:{planet.avgTemperature}</p>
           <p>Size(radius):{planet.sizeRadius}</p>
           <p>Distance From Sun:{planet.distanceFromSun}</p>
           <p>Length of Day:{planet.lengthOfDay}</p>
           <p>Length of Year:{planet.lengthOfYear}</p>
           <p>Number of Moons:{planet.noOfMoons}</p>
-          <p>{planet.funFact}</p>
+          <p>Fun Fact:{planet.funFact}</p>
         
         </div>
         <div className="actions">

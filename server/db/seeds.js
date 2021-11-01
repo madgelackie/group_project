@@ -5,14 +5,14 @@ db.planets.insertMany([
     {
         name:"Sun",
         image:"https://scitechdaily.com/images/Sun-Star-Animation.gif",
-        description:"The sun is so huge that you could fit over a million Earths inside it.  You couldn’t land on the sun - it’s far too hot!  A hot day on our planet is around 30 degrees Celsius - an average day on the Sun is around 5500 degrees Celsius!  There is no surface for a space-craft to land on either - it doesn’t have a solid surface either and is more like a big ball of gas. All the planets in our solar system orbit around the sun.",
+        description:"The sun is so huge that you could fit over a million Earths inside it.  You couldn’t land on the sun - it’s far too hot!  A hot day on our planet is around 30 degrees Celsius - an average day on the Sun is around 5500 degrees Celsius!  There is no surface for a space-craft to land on either and is more like a big ball of gas. All the planets in our solar system orbit around the sun.",
         sizeRadius:"696,340 km",
         funFact:"The Sun is actually white. We see it as yellow because of the Earth’s atmosphere."
     },
     {
         name:"Mercury",
         image:"https://i.gifer.com/Owne.gif",
-        description:"The closest planet to the sun, it’s also the smallest planet in our solar system, just a little bigger than our own moon.  The smallest planet title used to go to Pluto, but Pluto has jumped from the planet list to the dwarf. Even though it is the closest to the sun, it isn’t the hottest planet - that prize goes to Venus, Mercury’s neighbour.  The side of Mercury facing the sun gets very hot but the side facing away from the sun can get very very cold, much colder than on Earth.  This is because Mercury doesn’t have an atmosphere like our planet, which helps to keep heat in. ",
+        description:"The closest planet to the sun, it’s also the smallest planet in our solar system, just a little bigger than our own moon. Even though it is the closest to the sun, it isn’t the hottest planet - that prize goes to Venus, Mercury’s neighbour.  The side of Mercury facing the sun gets very hot but the side facing away from the sun can get very very cold, much colder than on Earth.  This is because Mercury doesn’t have an atmosphere like our planet, which helps to keep heat in. ",
         avgTemperature: "167 degrees celsius",
         distanceFromTheSun: "57.9 million km",
         lengthOfDay: "176 Earth days",
@@ -48,7 +48,7 @@ db.planets.insertMany([
     {
         name:"Mars",
         image:"https://i.pinimg.com/originals/34/ad/ba/34adba7b0e23a882620c9b989d76640e.gif",
-        description:"Also known as the ‘Red Planet’, Mars is the second smallest planet in our solar system, about half the size of Earth.  Although it’s red in colour, it isn’t very hot there - the warmest it gets is like a warmish day on Earth but most of the time it is much colder than Earth.  If you spot the tiny dot of Mars in our night sky, it will have a reddish tint, and when seen through a telescope it’s a reddish-orange colour - this is because there is lots of iron oxide in the rock that makes up it’s surface.  That’s the same thing that gives rusty metal its orange colour.  Space scientists are working hard to develop spacecraft and technology to get humans to Mars.",
+        description:"Also known as the ‘Red Planet’, Mars is the second smallest planet in our solar system, about half the size of Earth.  Although it’s red in colour, it isn’t very hot there - the warmest it gets is like a warmish day on Earth but most of the time it is much colder than Earth.  When seen through a telescope it’s a reddish-orange colour - this is because there is lots of iron oxide in the rock that makes up it’s surface.  That’s the same thing that gives rusty metal its orange colour.  Space scientists are working hard to develop spacecraft and technology to get humans to Mars.",
         avgTemperature: "-60 degrees celcius",
         distanceFromTheSun: "242.1 million km",
         lengthOfDay: "24 hours",
@@ -60,7 +60,7 @@ db.planets.insertMany([
     {
         name:"Jupiter",
         image:"https://i.pinimg.com/originals/87/5c/4e/875c4ef8f3e49012a19fcf1c8ec1a0aa.gif",
-        description:"Jupiter is a gas giant, just like Saturn. It is made mostly out of hydrogen and helium.It doesn’t have a true surface, but it may have a solid core about the size of Earth at its center.",
+        description:"Jupiter is a gas giant, just like Saturn. It is made mostly out of hydrogen and helium. It doesn’t have a true surface, but it may have a solid core about the size of Earth at its center.",
         avgTemperature: "-108 degrees celsius",
         distanceFromTheSun: "749.4 million km",
         lengthOfDay: "10 hours",
