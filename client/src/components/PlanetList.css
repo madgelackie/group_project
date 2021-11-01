@@ -10,7 +10,7 @@ ul {display:flex;
 }
 #planet-list{
     
-    width:75%;
+    width:40%;
     margin:auto;
 }
 
@@ -39,3 +39,5 @@ img:hover {
   ::-webkit-scrollbar-thumb:hover {
     background:darkblue; 
   }
+
+  li{padding:20%;}
