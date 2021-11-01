@@ -18,7 +18,7 @@ const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
     
     <li 
     onClick = {handleClick} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-    <Popup trigger={<img src={planet.image} alt="Earth image" />} modal nested >
+    <Popup contentStyle={{ width: "450px" }} trigger={<img src={planet.image} alt="Earth image" />} modal nested >
     {close => (
         <div className="modal">
         <button classname="close" onClick={close}>
