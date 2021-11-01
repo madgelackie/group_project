@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import PlanetList from '../components/PlanetList';
 import PlanetDetail from '../components/PlanetDetail';
-// import './Containers.css';
+import './Containers.css';
 import {Link} from "react-router-dom";
 
 
