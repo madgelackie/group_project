@@ -18,12 +18,6 @@ const GeneralInfoStar = ({generalInfo})=>{
     )}
 }
 
-//     // return(
-//         <>
-        
-//         {/* <img src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png"></img > */}
-//         </>
-//     )
-// }
+
 
 export default GeneralInfoStar;
