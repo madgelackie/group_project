@@ -47,10 +47,7 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
         setHoveredPlanet(null);
     }
 
-    const showInfo = () =>{
-        setGeneralInfo(generalInfo);
     
-    }
     
 
     
@@ -59,7 +56,7 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
         <>  
             
             { <GeneralInfoStar generalInfo = {generalInfo}/>}
-            {/* {generalInfo ? <GeneralInfoDetail generaInfo={generalInfo}/>:null}  */} 
+           
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
 
