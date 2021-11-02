@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 #planet-list-item {list-style: none;
   padding:20%;
 
+=======
+li {list-style: none;
+  padding:20%;}
+  
+ul {display:flex;}
+
+#planet-list-item {list-style: none;
+padding:20%;
+>>>>>>> develop
 }
 
 #planet-ul {display:flex;
@@ -18,7 +28,7 @@
     margin:auto;
 }
 
-img:hover {
+li:hover {
     height: 500px;
     cursor:url(https://cdn4.iconfinder.com/data/icons/business-management-209/48/transportation_rocket_spaceship_transport_space_shuttle-128.png),auto;
   }
@@ -44,6 +54,7 @@ img:hover {
     background:darkblue; 
   }
 
+<<<<<<< HEAD
   /* .list-inline {
     list-style: none;
     padding: 0;
@@ -53,3 +64,6 @@ img:hover {
     display: inline;
     padding: 10px;
   }
+=======
+ 
+>>>>>>> develop
