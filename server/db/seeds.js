@@ -206,3 +206,11 @@ db.quiz.insertMany([
                 answerWrong2: "A bird"
             }]
 )
+
+db.users.insertOne(
+    {
+    name: "User1",
+    age: "8",
+    ranking: "Space Cadet",
+}
+)
