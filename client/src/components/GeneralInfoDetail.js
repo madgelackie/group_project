@@ -1,8 +1,8 @@
 import React from "react";
 
-const GeneralInfoDetail = ({clickedStar}) =>{
+const GeneralInfoDetail = ({generaInfo}) =>{
     return(
-        <p>I clicked a star</p>
+        <p>{generaInfo}</p>
     )
 }
 export default GeneralInfoDetail;

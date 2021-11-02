@@ -16,7 +16,7 @@ const baseURL = 'http://localhost:5000/api/planets'
 const SolarSystemContainer = ({onQuizButtonClick}) => {
 
     const [planets, setPlanets] = useState([])
-    const [generalInfo, setGeneralInfo] =useState([]);
+    const [generalInfo, setGeneralInfo] =useState(null);
     const [selectedPlanet, setSelectedPlanet] = useState(null);
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
     const [clickedStar, setClickedStar]= useState(null);
@@ -47,21 +47,19 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
         setHoveredPlanet(null);
     }
 
-    const showInfo = (generalInfo) =>{
-        setClickedStar (generalInfo[0]);
+    const showInfo = () =>{
+        setGeneralInfo(generalInfo);
     
     }
-    console.log(generalInfo[0])
+    
 
-    const onStarClick = (generalInfo)=>{
-        setClickedStar(generalInfo);
-    }
+    
 
     return (
         <>  
-            {/* <GeneralInfoStar generalInfo = {generalInfo} onStarClick = {onStarClick}/>
-            {clickedStar ? <GeneralInfoDetail clickedStar = {clickedStar}/>:null} */}
-            <GeneralInfoStar showInfo = {showInfo} generalInfo = {generalInfo}/>
+            
+            { <GeneralInfoStar generalInfo = {generalInfo}/>}
+            {/* {generalInfo ? <GeneralInfoDetail generaInfo={generalInfo}/>:null}  */} 
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
 
