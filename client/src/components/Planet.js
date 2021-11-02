@@ -16,7 +16,7 @@ const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
 
     return (
     
-    <li 
+    <li id ="planet-list-item" 
     onClick = {handleClick} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
     <Popup contentStyle={{ width: "450px" }} trigger={<img src={planet.image} alt="Earth image" />} modal nested >
     {close => (
