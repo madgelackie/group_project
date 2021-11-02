@@ -68,7 +68,22 @@ const SolarSystemContainer = () => {
         setHoveredPlanet(null);
     }
 
-    
+    useEffect(() => {
+        const planetData = localStorage.getItem('selected-item')
+        if (planetData) {
+            setSelectedPlanet(JSON.parse(planetData));
+        }
+        const data = localStorage.getItem('seen-list');
+        if (data) {
+        setSeenPlanets(JSON.parse(data));
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem('selected-item', JSON.stringify(selectedPlanet));
+        localStorage.setItem('seen-list', JSON.stringify(seenPlanets));
+    })
+
     return (
         <>  
             
