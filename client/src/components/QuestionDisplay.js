@@ -6,9 +6,15 @@ import {useState} from 'react';
 const QuestionDisplay = ({quizQuestions}) => {
 
     const [activeQuestionIndex, setActiveQuestionIndex] = useState(0)
+    const [correctAnswerCounter, setCorrectAnswerCounter] = useState(0)
 
     const answerSelected = (isCorrect) => {
-        console.log(isCorrect);
+        setActiveQuestionIndex(activeQuestionIndex + 1);
+        console.log(activeQuestionIndex);
+        if (isCorrect == true) {
+          setCorrectAnswerCounter(correctAnswerCounter + 1);
+        console.log(correctAnswerCounter)};
+                         
     }
 
     const questionItems = quizQuestions.map((question) => {
