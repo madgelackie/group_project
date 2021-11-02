@@ -128,7 +128,7 @@ db.generalInfo.insertMany([
 
 db.quiz.insertMany([
             {
-                question:"Why is Mars red?",
+                questionText:"Why is Mars red?",
                 answerOptions: [
                     { answerText: "Iron oxide in the rock", isCorrect:true },
                     { answerText: "Aliens painted it red", isCorrect:false },
@@ -136,7 +136,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"How long is a day on Mars?",
+                questionText:"How long is a day on Mars?",
                 answerOptions: [
                     { answerText: "50 hours long", isCorrect:false },
                     { answerText: "Almost the same as on Earth", isCorrect:true },
@@ -144,7 +144,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Mercury is:",
+                questionText:"Mercury is:",
                 answerOptions: [
                     { answerText: "The furthest planet from the Sun", isCorrect:false },
                     { answerText: "The closest planet to the Sun", isCorrect:true },
@@ -152,7 +152,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Which planet is the hottest?",
+                questionText:"Which planet is the hottest?",
                 answerOptions: [
                     { answerText: "Mars", isCorrect:false },
                     { answerText: "Mercury", isCorrect:false },
@@ -160,7 +160,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Why is Venus so hot?",
+                questionText:"Why is Venus so hot?",
                 answerOptions: [
                     { answerText: "Because it has a thick atmosphere that keeps the heat from the sun in", isCorrect:true },
                     { answerText: "Because someone left the heating on", isCorrect:false },
@@ -168,7 +168,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Who are Earth’s nearest neighbours?",
+                questionText:"Who are Earth’s nearest neighbours?",
                 answerOptions: [
                     { answerText: "Saturn and Mars", isCorrect:false },
                     { answerText: "Venus and Mars", isCorrect:true },
@@ -176,7 +176,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Saturn is a planet known for the large rings that surround it. What are these rings made of?",
+                questionText:"Saturn is a planet known for the large rings that surround it. What are these rings made of?",
                 answerOptions: [
                     { answerText: "Space junk", isCorrect:false },
                     { answerText: "Gases", isCorrect:false },
@@ -184,7 +184,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"What kind of weather does Neptune have",
+                questionText:"What kind of weather does Neptune have",
                 answerOptions: [
                     { answerText: "Very warm", isCorrect:false },
                     { answerText: "The same as Earth", isCorrect:false },
@@ -192,7 +192,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"Now that Pluto is no longer included, how many planets are there in the Solar System?",
+                questionText:"Now that Pluto is no longer included, how many planets are there in the Solar System?",
                 answerOptions: [
                     { answerText: "8", isCorrect:true },
                     { answerText: "6", isCorrect:false },
@@ -200,7 +200,7 @@ db.quiz.insertMany([
                 ],
             },
             {
-                question:"How many Earths can fit inside the sun?",
+                questionText:"How many Earths can fit inside the sun?",
                 answerOptions: [
                     { answerText: "250,000", isCorrect:false },
                     { answerText: "1.3 million", isCorrect:true },

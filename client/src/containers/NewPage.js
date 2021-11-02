@@ -8,6 +8,9 @@ const baseURL = 'http://localhost:5000/api/quiz'
 const QuizContainer = () => {
 
     const [quizQuestions, setQuizQuestions] = useState([])
+    // const [currentQuestion, setCurrentQuestion] = useState(0)
+    // const [showScore, setShowScore] = useState(false)
+    // const [score, setScore] = useState(0)
 
     useEffect(() => {
         return fetch(baseURL)
@@ -21,6 +24,9 @@ const QuizContainer = () => {
         <Link id="link" to="/">Planets</Link>
         </div>
     )
+
 }
+
+
 
 export default QuizContainer;
