@@ -5,6 +5,8 @@ import PlanetHover from '../components/PlanetHover'
 import './Containers.css';
 import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
+import GeneralInfoStar2 from '../components/GeneralInfoStyle2';
+import GeneralInfoStar3 from '../components/GeneralInfoStar3';
 
 
 
@@ -52,6 +54,9 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
         <>  
             
             { <GeneralInfoStar generalInfo = {generalInfo}/>}
+            { <GeneralInfoStar2 generalInfo = {generalInfo}/>}
+            { <GeneralInfoStar3 generalInfo = {generalInfo}/>}
+
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}

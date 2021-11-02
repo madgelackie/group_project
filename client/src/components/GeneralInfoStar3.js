@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import './GeneralInfo.css';
 
 
-const GeneralInfoStar2 = ({generalInfo})=>{
+const GeneralInfoStar3 = ({generalInfo})=>{
     const [visible, setVisible] = useState(false)
     const handleClick= () =>{setVisible(!visible)}
     if (visible){return(
         <>
         <img class="star-image" src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
-        <p>{generalInfo[1].descriptionTwo}</p>
+        <p>{generalInfo[2].descriptionThree}</p>
         </>
         
     )}
@@ -20,4 +20,4 @@ const GeneralInfoStar2 = ({generalInfo})=>{
 
 
 
-export default GeneralInfoStar2;
+export default GeneralInfoStar3;
