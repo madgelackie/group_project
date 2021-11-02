@@ -1,39 +1,39 @@
 import {useState} from "react"
+import { postUser } from "../services/UserService"
 
 
 const UserContainer = () => {
     
-    const [formData, setFormData] = useState({})
+    const [name, setName] = useState("");
+    const [age, setAge] = useState("");
 
-    const baseURL = "http://localhost:5000/api/users"
-
-    const postUser = (payload) => {
-        return fetch(baseURL, {
-            method: 'POST',
-            body: JSON.stringify(payload),
-            headers: {'Cotent-Type': 'application/json'}
-        })
-        .then(res => res.json())
-    }
-
-    const onChange = (event) => {
-        formData[event.target.id] = event.target.value;
-        setFormData(formData);
-    }
-
+    const handleNameChange = (event) => setName(event.target.value)
+    const handleAgeChange = (event) => setAge(event.target.value)
+    
     const onSubmit = (event) => {
         event.preventDefault();
-        postUser(formData)
+        postUser({
+            name: name,
+            age: age,
+            ranking: null
+        });
+        setName("");
+        setAge("");
         }
     
-
     return (
-        <form onSubmit={onSubmit}>
-            <label>What is your name?</label>
-            <input onChange={onChange} type="text" />
+        <form onSubmit={onSubmit} id="user-form">
+        <div>
+            <label >What is your name?</label>
+            <input onChange={handleNameChange} id="name" type="text" />
+        </div>
+        <div>    
             <label>How old are you?</label>
-            <input onChange={onChange} type="text" />
-            <button type="sumbit" value="Submit">Sumbit</button>
+            <input onChange={handleAgeChange} id="age" type="text" />
+        </div>
+        <div>
+            <button type="sumbit" value="Submit">Submit</button>
+        </div>
         </form>
     )
 }
