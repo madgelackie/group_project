@@ -5,7 +5,7 @@ import PlanetHover from '../components/PlanetHover'
 import './Containers.css';
 import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
-import GeneralInfoStar2 from '../components/GeneralInfoStyle2';
+import GeneralInfoStar2 from '../components/GeneralInfoStar2';
 import GeneralInfoStar3 from '../components/GeneralInfoStar3';
 
 
