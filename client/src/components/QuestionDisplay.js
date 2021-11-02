@@ -1,5 +1,5 @@
 import QuestionItem from "./QuestionItem"
-// import DisplayResult from "./DisplayResult";
+import ResultPage from "./ResultPage";
 import {useEffect, useState} from 'react';
 
 
@@ -27,7 +27,7 @@ const QuestionDisplay = ({quizQuestions}) => {
     const questionItems = quizQuestions.map((question) => {
         return <>
                 <QuestionItem question={question} answerSelected={answerSelected} />
-                {/* {displayResult === true ?<DisplayResult displayResult={displayResult}/>: null} */}
+                
                 </>
     })
 
@@ -35,6 +35,7 @@ const QuestionDisplay = ({quizQuestions}) => {
         <div>
             <ul>
                 {questionItems[activeQuestionIndex]}
+                {displayResult ? <ResultPage displayResult={displayResult} correctAnswerCounter={correctAnswerCounter}/>: null}
             </ul>
         </div>
     )
