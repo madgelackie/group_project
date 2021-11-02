@@ -26,9 +26,17 @@ const SolarSystemContainer = () => {
 
     const onPlanetClick = (planet) => {
         setSelectedPlanet(planet);  
+        for (let whateverPlanet of seenPlanets){
+            console.log(whateverPlanet.name)
+            console.log(planet.name)
+            if (whateverPlanet.name == planet.name){
+                return
+            }
+        }
         setSeenPlanets([...seenPlanets, planet]) 
+        }
         
-    }
+    
 
 
     return (
