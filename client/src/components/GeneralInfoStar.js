@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './GeneralInfo.css';
 
 
 const GeneralInfoStar = ({generalInfo})=>{
@@ -6,14 +7,14 @@ const GeneralInfoStar = ({generalInfo})=>{
     const handleClick= () =>{setVisible(!visible)}
     if (visible){return(
         <>
-        <img  src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
+        <img class="star-image" src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
         <p>{generalInfo[0].descriptionOne}</p>
         </>
         
     )}
     else {
     return(
-        <img src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
+        <img class="star-image" src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
     )}
 }
 
