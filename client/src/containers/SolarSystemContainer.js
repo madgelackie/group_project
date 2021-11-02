@@ -1,11 +1,8 @@
 import {useState, useEffect} from 'react';
 import PlanetList from '../components/PlanetList';
 import PlanetDetail from '../components/PlanetDetail';
-<<<<<<< HEAD
 import PlanetsSeen from '../components/PlanetsSeen';
-=======
 import PlanetHover from '../components/PlanetHover'
->>>>>>> develop
 import './Containers.css';
 import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
@@ -25,13 +22,10 @@ const SolarSystemContainer = () => {
     const [planets, setPlanets] = useState([])
     const [generalInfo, setGeneralInfo] =useState(null);
     const [selectedPlanet, setSelectedPlanet] = useState(null);
-<<<<<<< HEAD
     const [seenPlanets, setSeenPlanets] = useState([]);
-=======
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
     
     const [timedPopup, setTimedPopup] = useState(false)
->>>>>>> develop
 
     useEffect(() => {
         return fetch(baseURL)
@@ -84,16 +78,13 @@ const SolarSystemContainer = () => {
 
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
-<<<<<<< HEAD
             {selectedPlanet ? <PlanetsSeen seenPlanets={seenPlanets}/>:null}
-=======
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
             <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
                 <h3>Welcome to our site</h3>
                 <p> Click the planets for more info</p>
             </Popup>
 
->>>>>>> develop
             <Link id="link" to="/quiz">Quiz</Link>
 
         </>

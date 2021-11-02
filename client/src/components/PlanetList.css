@@ -1,16 +1,6 @@
-<<<<<<< HEAD
 #planet-list-item {list-style: none;
   padding:20%;
 
-=======
-li {list-style: none;
-  padding:20%;}
-  
-ul {display:flex;}
-
-#planet-list-item {list-style: none;
-padding:20%;
->>>>>>> develop
 }
 
 #planet-ul {display:flex;
@@ -54,7 +44,6 @@ li:hover {
     background:darkblue; 
   }
 
-<<<<<<< HEAD
   /* .list-inline {
     list-style: none;
     padding: 0;
@@ -64,6 +53,3 @@ li:hover {
     display: inline;
     padding: 10px;
   }
-=======
- 
->>>>>>> develop

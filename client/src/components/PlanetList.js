@@ -20,11 +20,7 @@ const PlanetList = ({planets, onPlanetClick, onPlanetHover, onPlanetLeave}) => {
 
     return (
         <div id= "planet-list">
-<<<<<<< HEAD
-        <ul id="planet-ul">
-=======
         <ul id= "planet-ul">
->>>>>>> develop
         {planetItems}
         </ul>
         </div>
