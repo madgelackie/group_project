@@ -16,7 +16,7 @@ const baseURL = 'http://localhost:5000/api/planets'
 
 
 
-const SolarSystemContainer = ({onQuizButtonClick}) => {
+const SolarSystemContainer = ({}) => {
 
     const [planets, setPlanets] = useState([])
     const [generalInfo, setGeneralInfo] =useState(null);
