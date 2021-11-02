@@ -1,7 +1,13 @@
 li {list-style: none;
   padding:20%;}
   
-ul {display:flex;
+ul {display:flex;}
+
+#planet-list-item {list-style: none;
+padding:20%;
+}
+
+#planet-ul {display:flex;
     align-items :center;
     overflow: scroll;
     overflow-y: hidden;
@@ -42,4 +48,4 @@ li:hover {
     background:darkblue; 
   }
 
-  
+ 
