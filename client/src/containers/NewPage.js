@@ -8,14 +8,11 @@ const baseURL = 'http://localhost:5000/api/quiz'
 const QuizContainer = () => {
 
     const [quizQuestions, setQuizQuestions] = useState([])
-    // const [currentQuestion, setCurrentQuestion] = useState(0)
-    // const [showScore, setShowScore] = useState(false)
-    // const [score, setScore] = useState(0)
-
+    
     useEffect(() => {
         return fetch(baseURL)
         .then(res => res.json())
-        .then(questions => setQuizQuestions(questions))
+        .then(questions => setQuizQuestions(questions), [])
     })
 
     return (

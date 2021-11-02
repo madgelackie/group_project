@@ -207,5 +207,14 @@ db.quiz.insertMany([
                     { answerText: "5,000", isCorrect:false },
                 ],
             },
-            ]
+
+        ])
+
+db.users.insertOne(
+    {
+    name: "User1",
+    age: "8",
+    ranking: "Space Cadet",
+}
+
 )
