@@ -68,7 +68,6 @@ const SolarSystemContainer = () => {
         setHoveredPlanet(null);
     }
 
-    
     return (
         <>  
             
@@ -86,6 +85,8 @@ const SolarSystemContainer = () => {
             </Popup>
 
             <Link id="link" to="/quiz">Quiz</Link>
+            <br></br>
+            <Link id="link" to="/user">User Page</Link>
 
         </>
     )

@@ -22,6 +22,8 @@ const UserContainer = () => {
         }
     
     return (
+        <div>
+        <h2>Are you new to Space Camp? Sign-up here:</h2>
         <form onSubmit={onSubmit} id="user-form">
         <div>
             <label >What is your name?</label>
@@ -35,6 +37,7 @@ const UserContainer = () => {
             <button type="sumbit" value="Submit">Submit</button>
         </div>
         </form>
+        </div>
     )
 }
 
