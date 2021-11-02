@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import GeneralInfoDetail from "./GeneralInfoDetail";
+
 
 const GeneralInfoStar = ({generalInfo})=>{
     const [visible, setVisible] = useState(false)

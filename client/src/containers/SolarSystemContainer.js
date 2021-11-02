@@ -5,7 +5,7 @@ import PlanetHover from '../components/PlanetHover'
 import './Containers.css';
 import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
-import GeneralInfoDetail from '../components/GeneralInfoDetail';
+
 
 
 
@@ -19,7 +19,7 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
     const [generalInfo, setGeneralInfo] =useState(null);
     const [selectedPlanet, setSelectedPlanet] = useState(null);
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
-    const [clickedStar, setClickedStar]= useState(null);
+    
 
     useEffect(() => {
         return fetch(baseURL)
@@ -48,21 +48,13 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
     }
 
     
-    
-
-    
-
     return (
         <>  
             
             { <GeneralInfoStar generalInfo = {generalInfo}/>}
-           
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
-
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
-
-            
             <Link id="link" to="/quiz">Quiz</Link>
         </>
     )
