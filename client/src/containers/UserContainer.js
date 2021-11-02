@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 import { getUsers, postUser } from "../services/UserService"
-
+import UserSelect from "../components/UserSelect";
 
 
 const UserContainer = () => {
@@ -36,18 +36,28 @@ const UserContainer = () => {
         <form onSubmit={onSubmit} id="user-form">
         <div>
             <label >What is your name?</label>
-            <input onChange={handleNameChange} id="name" type="text" />
+            <input 
+            onChange={handleNameChange} 
+            id="name"  
+            value={name}
+            required
+            type="text" />
         </div>
         <div>    
             <label>How old are you?</label>
-            <input onChange={handleAgeChange} id="age" type="text" />
+            <input
+            onChange={handleAgeChange} 
+            id="age"  
+            type="text"
+            value={age}
+            required
+            />
         </div>
         <div>
             <button type="sumbit" value="Submit">Submit</button>
         </div>
         </form>
-        <h2>Have you already signed-up? Find your name here:</h2>
-
+        {users ? <UserSelect users={users}/> :null}      
         </div>
     )
 }
