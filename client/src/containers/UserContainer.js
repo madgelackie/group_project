@@ -6,6 +6,7 @@ import UserSelect from "../components/UserSelect";
 const UserContainer = () => {
     
     const [users, setUsers] = useState(null);
+    const [selectedUser, setSelectedUser] = useState(null);
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
 
@@ -30,6 +31,10 @@ const UserContainer = () => {
         setAge("");
         }
     
+        const onUserSelected = (user) => {
+            setSelectedUser(user)
+        }
+
     return (
         <div>
         <h2>Are you new to Space Camp? Sign-up here:</h2>
@@ -57,7 +62,7 @@ const UserContainer = () => {
             <button type="sumbit" value="Submit">Submit</button>
         </div>
         </form>
-        {users ? <UserSelect users={users}/> :null}      
+        {users ? <UserSelect users={users} onUserSelected={onUserSelected}/> :null}      
         </div>
     )
 }
