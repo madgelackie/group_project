@@ -1,5 +1,8 @@
-li {list-style: none;}
-ul {display:flex;
+#planet-list-item {list-style: none;
+padding:20%;
+}
+
+#planet-ul {display:flex;
     align-items :center;
     overflow: scroll;
     overflow-y: hidden;
@@ -40,4 +43,4 @@ img:hover {
     background:darkblue; 
   }
 
-  li{padding:20%;}
+ 
