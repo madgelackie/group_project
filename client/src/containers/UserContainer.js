@@ -1,15 +1,24 @@
-import {useState} from "react"
-import { postUser } from "../services/UserService"
+import {useState, useEffect} from "react"
+import { getUsers, postUser } from "../services/UserService"
+
 
 
 const UserContainer = () => {
     
+    const [users, setUsers] = useState(null);
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
 
     const handleNameChange = (event) => setName(event.target.value)
     const handleAgeChange = (event) => setAge(event.target.value)
     
+    useEffect(() => {
+        if (users === !null);
+        getUsers().then((allUsers) => {
+            setUsers(allUsers)
+        }) 
+    }, null);
+
     const onSubmit = (event) => {
         event.preventDefault();
         postUser({
@@ -37,6 +46,8 @@ const UserContainer = () => {
             <button type="sumbit" value="Submit">Submit</button>
         </div>
         </form>
+        <h2>Have you already signed-up? Find your name here:</h2>
+
         </div>
     )
 }

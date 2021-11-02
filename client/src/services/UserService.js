@@ -8,3 +8,9 @@ export const postUser = (payload) => {
     })
     .then(res => res.json())
 }
+
+export const getUsers = () => {
+    return fetch(baseURL)
+        .then(res => res.json())
+}
+
