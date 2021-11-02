@@ -12,7 +12,7 @@ const QuizContainer = () => {
     useEffect(() => {
         return fetch(baseURL)
         .then(res => res.json())
-        .then(questions => setQuizQuestions(questions))
+        .then(questions => setQuizQuestions(questions), [])
     })
 
     return (

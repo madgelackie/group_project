@@ -1,10 +1,6 @@
-li {list-style: none;
-  padding:20%;}
-  
-ul {display:flex;}
-
 #planet-list-item {list-style: none;
-padding:20%;
+  padding:20%;
+
 }
 
 #planet-ul {display:flex;
@@ -48,4 +44,12 @@ li:hover {
     background:darkblue; 
   }
 
- 
+  /* .list-inline {
+    list-style: none;
+    padding: 0;
+  } */
+
+ #inline-list {
+    display: inline;
+    padding: 10px;
+  }
