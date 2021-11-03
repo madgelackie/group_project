@@ -84,6 +84,11 @@ const SolarSystemContainer = () => {
 
     return (
         <>  
+        <div class = "links">
+            <Link class="link" to="/quiz">Take a Quiz</Link>
+            <br></br>
+            <Link class="link" to="/user">User Page</Link>
+            </div>
         <div id = "main-container">
             <div id = "star-container">
             { <GeneralInfoStar generalInfo = {generalInfo}/>}
@@ -96,14 +101,10 @@ const SolarSystemContainer = () => {
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
         </div>
             <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
-                <h3>Welcome to our site</h3>
-                <p> Click the planets for more info</p>
+                <h3>Welcome to Space Camp</h3>
+                <p>Learn about our solar system and its planets. Click on the stars for general information about solar system and click on the planets to find out more. Then test your knowledge with our QUIZ.</p>
             </Popup>
-
-            <Link id="link" to="/quiz">Quiz</Link>
-            <br></br>
-            <Link id="link" to="/user">User Page</Link>
-
+            
         </>
     )
 }

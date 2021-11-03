@@ -8,6 +8,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .popup-inner {
@@ -15,11 +16,17 @@
     padding: 32px;
     width: 100vh;
     max-width: 640px;
-    background-color: blue;
+    background-image:url("https://u7.uidownload.com/vector/508/738/vector-abstract-yellow-and-white-graphic-background-ai-thumbnail.jpg");
+    color:#151e3d;
+    background-size: cover;
+    border-style:solid;
+    border-color: white;
+    box-shadow: 5px 10px 18px white;
 }
 
 .popup-iner .close-btn {
     position: absolute;
-    top: 16px;
+    top:5px;
     right: 16px;
+    background-color:white;
 }
