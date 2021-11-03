@@ -25,6 +25,10 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
     const generalInfoRouter = createRouter(generalInfoCollection)
     app.use('/api/generalInfo', generalInfoRouter);
 
+    const usersCollection = db.collection('users');
+    const usersRouter = createRouter(usersCollection)
+    app.use('/api/users', usersRouter)
+
 
     app.listen(5000, function(){
         console.log(`app listening on port ${this.address().port}`);

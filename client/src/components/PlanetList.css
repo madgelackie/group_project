@@ -1,8 +1,3 @@
-li {list-style: none;
-  padding:20%;}
-  
-ul {display:flex;}
-
 #planet-list-item {list-style: none;
 padding:20%;
 
@@ -57,4 +52,12 @@ padding:20%;
     background:#151e3d; 
   }
 
- 
+  /* .list-inline {
+    list-style: none;
+    padding: 0;
+  } */
+
+ #inline-list {
+    display: inline;
+    padding: 10px;
+  }

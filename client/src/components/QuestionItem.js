@@ -1,7 +1,20 @@
 
-const QuestionItem = ({question}) => {
+const QuestionItem = ({question, answerSelected}) => {
 
-    return <li>{question.question}</li>
+    const answerElements = question.answerOptions.map((answer) => {
+        return <button onClick={() => answerSelected(answer.isCorrect)}>{answer.answerText}</button>
+
+    }) 
+
+    return (
+    <>
+    <li>
+    <h3>{question.questionText}</h3>
+    {answerElements}
+    </li>
+    </>
+    )
+    
 }
 
 export default QuestionItem;
