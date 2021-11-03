@@ -1,14 +1,37 @@
-#link {
+.link {
     font-size: x-large;
-    color: white;
+    color: #151e3d;
+    background-color:#fcd12a ;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px white;
     
 }
-/* #star-container {
+#star-container {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-} */
+    
+}
 
 #main-container{
     display: flex;
+}
+
+.links{
+    display:flex;
+    justify-content:  space-between;
+    padding: 40px;
+    
+}
+body{ 
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-color:white;
+    box-shadow: 5px 10px 18px white;
+    font-family: 'Space Mono';
+    
 }

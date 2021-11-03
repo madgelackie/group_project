@@ -1,6 +1,7 @@
 .star-image {
     height:100px;
     padding:20px;
+    
 }
 
 .gen-info{
@@ -9,11 +10,17 @@
     background-image:url("https://u7.uidownload.com/vector/508/738/vector-abstract-yellow-and-white-graphic-background-ai-thumbnail.jpg");
     background-size: cover;
     border-color: white;
-    color:black;
+    color:#151e3d;
     border-radius: 25px;
     width: 120px;
     height:140px;
     overflow:scroll;
     overflow-x:hidden;
+    box-shadow: 5px 10px 18px  white;
     
+}
+
+star-info-box {
+    display:flex;
+    flex-wrap: nowrap;
 }

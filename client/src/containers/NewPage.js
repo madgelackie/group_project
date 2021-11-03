@@ -18,7 +18,7 @@ const QuizContainer = () => {
     return (
         <div>
         <QuestionDisplay quizQuestions={quizQuestions} /> 
-        <Link id="link" to="/">Planets</Link>
+        <Link class="link" to="/">Planets</Link>
         </div>
     )
 
