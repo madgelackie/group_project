@@ -8,8 +8,8 @@ const QuestionItem = ({question, answerSelected}) => {
 
     return (
     <>
-    <li>
-    <h3>{question.questionText}</h3>
+    <li id = "quiz">
+    <h3 id="question">{question.questionText}</h3>
     {answerElements}
     </li>
     </>
