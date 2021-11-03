@@ -16,7 +16,7 @@ padding:20%;
     border: 30px solid;
   border-image-slice: 1;
   border-width: 20px;
-  border-image-source: linear-gradient(to left,yellow, white);
+  border-image-source: linear-gradient(to left,white,#fcd12a, white, #fcd12a, white);
   
     
 }
@@ -43,13 +43,13 @@ padding:20%;
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:grey; 
+    background:#fcd12a; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background:#151e3d; 
+    background:white; 
   }
 
   /* .list-inline {
