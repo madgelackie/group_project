@@ -29,7 +29,7 @@ const UserContainer = ({setCurrentUser, currentUser}) => {
             name: name,
             age: age,
             score: 0,
-            spaceClass: null
+            spaceClass: "Cadet"
         });
         setName("");
         setAge("");
