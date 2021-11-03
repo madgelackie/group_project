@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
 import GeneralInfoStar2 from '../components/GeneralInfoStar2';
 import GeneralInfoStar3 from '../components/GeneralInfoStar3';
-import { getUsers, getUsersbyID } from '../services/UserService';
+import { getUsers } from '../services/UserService';
 
 
 import Popup from '../components/Popup';
@@ -24,10 +24,9 @@ const SolarSystemContainer = () => {
     const [planets, setPlanets] = useState([])
     const [generalInfo, setGeneralInfo] =useState(null);
     const [selectedPlanet, setSelectedPlanet] = useState(null);
-    const [seenPlanets, setSeenPlanets] = useState([]);
+    // const [seenPlanets, setSeenPlanets] = useState([]);
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
     const [users, setUsers] = useState([]);
-    // const [selectedUser, setSelectedUser] = useState(null);
     const [timedPopup, setTimedPopup] = useState(false)
 
     useEffect(() => {
@@ -47,11 +46,6 @@ const SolarSystemContainer = () => {
             setUsers(allUsers)}
     )}, [])
         
-    // useEffect(() => {
-    //     getUsersbyID().then((user) => {
-    //         setSelectedUser(user)
-    //     }, null)
-    // })
 
     useEffect(() => {
         setTimeout(() => {
@@ -62,14 +56,14 @@ const SolarSystemContainer = () => {
 
     const onPlanetClick = (planet) => {
         setSelectedPlanet(planet);  
-        for (let whateverPlanet of seenPlanets){
-            console.log(whateverPlanet.name)
-            console.log(planet.name)
-            if (whateverPlanet.name == planet.name){
-                return
-            }
-        }
-        setSeenPlanets([...seenPlanets, planet]) 
+        // for (let whateverPlanet of seenPlanets){
+        //     console.log(whateverPlanet.name)
+        //     console.log(planet.name)
+        //     if (whateverPlanet.name == planet.name){
+        //         return
+        //     }
+        // }
+        // setSeenPlanets([...seenPlanets, planet]) 
         }
         
     
@@ -97,7 +91,7 @@ const SolarSystemContainer = () => {
             </div>
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
-            {selectedPlanet ? <PlanetsSeen seenPlanets={seenPlanets}/>:null}
+            {/* {selectedPlanet ? <PlanetsSeen seenPlanets={seenPlanets}/>:null} */}
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
         </div>
             <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
