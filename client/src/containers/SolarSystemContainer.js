@@ -26,8 +26,8 @@ const SolarSystemContainer = () => {
     const [selectedPlanet, setSelectedPlanet] = useState(null);
     const [seenPlanets, setSeenPlanets] = useState([]);
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
-    const [users, setUsers] = useState(null);
-    
+    const [users, setUsers] = useState([]);
+    // const [selectedUser, setSelectedUser] = useState(null);
     const [timedPopup, setTimedPopup] = useState(false)
 
     useEffect(() => {
@@ -45,9 +45,13 @@ const SolarSystemContainer = () => {
     useEffect(() => {
         getUsers().then((allUsers) => {
             setUsers(allUsers)}
-    )}, null)
+    )}, [])
         
-    
+    // useEffect(() => {
+    //     getUsersbyID().then((user) => {
+    //         setSelectedUser(user)
+    //     }, null)
+    // })
 
     useEffect(() => {
         setTimeout(() => {
