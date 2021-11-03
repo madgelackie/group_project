@@ -3,3 +3,12 @@
     color: white;
     
 }
+/* #star-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+#main-container{
+    display: flex;
+}

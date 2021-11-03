@@ -60,14 +60,16 @@ const SolarSystemContainer = ({onQuizButtonClick}) => {
     
     return (
         <>  
-            
+        <div id = "main-container">
+            <div id = "star-container">
             { <GeneralInfoStar generalInfo = {generalInfo}/>}
             { <GeneralInfoStar2 generalInfo = {generalInfo}/>}
             { <GeneralInfoStar3 generalInfo = {generalInfo}/>}
-
+            </div>
             <PlanetList planets={planets} onPlanetClick={onPlanetClick} onPlanetHover={onPlanetHover} onPlanetLeave={onPlanetLeave}/>
             {selectedPlanet ? <PlanetDetail selectedPlanet= {selectedPlanet}/>:null}
             {hoveredPlanet ? <PlanetHover hoveredPlanet = {hoveredPlanet}/>:null}
+        </div>
             <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
                 <h3>Welcome to our site</h3>
                 <p> Click the planets for more info</p>

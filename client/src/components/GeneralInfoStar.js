@@ -8,7 +8,7 @@ const GeneralInfoStar = ({generalInfo})=>{
     if (visible){return(
         <>
         <img class="star-image" src="https://cdn4.iconfinder.com/data/icons/nature-1-8/32/36-512.png" onClick = {handleClick}></img>
-        <p>{generalInfo[0].descriptionOne}</p>
+        <p class="gen-info">{generalInfo[0].descriptionOne}</p>
         </>
         
     )}
