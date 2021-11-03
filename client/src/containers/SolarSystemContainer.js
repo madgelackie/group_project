@@ -8,6 +8,8 @@ import {Link} from "react-router-dom";
 import GeneralInfoStar from '../components/GeneralInfoStar';
 import GeneralInfoStar2 from '../components/GeneralInfoStar2';
 import GeneralInfoStar3 from '../components/GeneralInfoStar3';
+import { getUsers, getUsersbyID } from '../services/UserService';
+
 
 import Popup from '../components/Popup';
 
@@ -24,6 +26,7 @@ const SolarSystemContainer = () => {
     const [selectedPlanet, setSelectedPlanet] = useState(null);
     const [seenPlanets, setSeenPlanets] = useState([]);
     const [hoveredPlanet, setHoveredPlanet] = useState(null);
+    const [users, setUsers] = useState(null);
     
     const [timedPopup, setTimedPopup] = useState(false)
 
@@ -38,6 +41,13 @@ const SolarSystemContainer = () => {
         .then(res => res.json())
         .then(info => setGeneralInfo(info))
     },[])
+
+    useEffect(() => {
+        getUsers().then((allUsers) => {
+            setUsers(allUsers)}
+    )}, null)
+        
+    
 
     useEffect(() => {
         setTimeout(() => {

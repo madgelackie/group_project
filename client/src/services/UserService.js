@@ -14,5 +14,10 @@ export const getUsers = () => {
         .then(res => res.json())
 }
 
+export const getUsersbyID = (user) => {
+    return fetch(baseURL + user._id)
+        .then(res => {res.json()})
+}
+
 
 
