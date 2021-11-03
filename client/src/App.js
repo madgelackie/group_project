@@ -1,12 +1,18 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
+import {useState} from 'react'
 import SolarSystemContainer from './containers/SolarSystemContainer';
 import QuizContainer from './containers/NewPage';
 import UserContainer from './containers/UserContainer';
 
 
 function App() {
+
+  const [currentUser, setCurrentUser] = useState(null);
+
+  const setGlobalUser = ((user) => {
+    console.log("setGlobalUser");
+    setCurrentUser(user)} )
 
   return (
     <>
@@ -22,10 +28,10 @@ function App() {
           <SolarSystemContainer />
         </Route>
         <Route path="/quiz" exact>
-          <QuizContainer />
+          <QuizContainer setCurrentUser={setGlobalUser} currentUser={currentUser}/>
         </Route>
         <Route path="/user" exact>
-          <UserContainer />
+          <UserContainer setCurrentUser={setGlobalUser} currentUser={currentUser}/>
         </Route>
       </Switch>
     </Router>

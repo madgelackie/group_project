@@ -1,26 +1,35 @@
 import QuestionItem from "./QuestionItem"
 import ResultPage from "./ResultPage";
+import { updateUser } from "../services/UserService";
 import {useEffect, useState} from 'react';
 
 
 
-const QuestionDisplay = ({quizQuestions}) => {
+const QuestionDisplay = ({quizQuestions, setCurrentUser, currentUser, resetQuiz}) => {
 
     const [activeQuestionIndex, setActiveQuestionIndex] = useState(0)
     const [correctAnswerCounter, setCorrectAnswerCounter] = useState(0)
     const [displayResult, setDisplayResult] = useState(false)
 
     useEffect(() => {
-        activeQuestionIndex === quizQuestions.length ? setDisplayResult(true) : setDisplayResult(false)
-    },);
+        if (activeQuestionIndex === 10) {
+            setDisplayResult(true)
+            let updatedUser = currentUser
+            updatedUser.score += correctAnswerCounter
+            setCurrentUser(updatedUser)
+            updateUser(updatedUser)
+            setActiveQuestionIndex(0)              
+        } 
+        
+        
+    });
 
 
     const answerSelected = (isCorrect) => {
         setActiveQuestionIndex(activeQuestionIndex + 1);
-        console.log(activeQuestionIndex);
         if (isCorrect == true) {
           setCorrectAnswerCounter(correctAnswerCounter + 1);
-        console.log(correctAnswerCounter)};
+        }
                          
     }
 
@@ -31,14 +40,20 @@ const QuestionDisplay = ({quizQuestions}) => {
                 </>
     })
 
+    if (quizQuestions){
     return (
         <div>
             <ul>
                 {questionItems[activeQuestionIndex]}
                 {displayResult ? <ResultPage displayResult={displayResult} correctAnswerCounter={correctAnswerCounter}/>: null}
             </ul>
+            <button onClick={resetQuiz}>Restart Quiz</button>
         </div>
     )
+    }
+    else{
+        return <p>Loading</p>
+    }
 }
 
 export default QuestionDisplay;
