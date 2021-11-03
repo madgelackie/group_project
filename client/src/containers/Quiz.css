@@ -13,4 +13,19 @@
     background-color: white;
     color: #151e3d;
     padding: 10px;
+    border-style:solid;
+    border-color:#fcd12a;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px white;
+}
+
+#button-answers {
+    padding:10px;
+    margin: 15px;
+    box-shadow: 5px 10px 18px white;
+    color:#151e3d;
+    font-family: 'Space Mono';
+    border-style:solid;
+    border-color:#fcd12a;
+    border-radius: 25px;
 }

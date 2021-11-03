@@ -1,0 +1,67 @@
+.user-page-text {
+    color: #fcd12a;
+    padding-top:20px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#sub-form{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    border-style: solid;
+    border-color:#fcd12a;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px white;
+
+
+}
+
+label{
+    padding:10px;
+}
+
+.user-data {
+    padding:10px;
+}
+
+input {
+    border-style: solid;
+    border-color:#fcd12a;
+    border-radius: 25px;
+}
+
+#submit {
+    background-color: white;
+    border-color: #fcd12a;
+    border-radius: 25px;
+    font-family: 'Space Mono';
+    outline: none;
+}
+
+#user-links{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+select{
+    display: flex;
+    margin:auto;
+    height: 30px;
+    background-color: white;
+    border-color: #fcd12a;
+    border-radius: 25px;
+    font-family: 'Space Mono';
+    box-shadow: 5px 10px 18px white;
+    
+    
+}

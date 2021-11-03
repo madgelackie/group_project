@@ -1,6 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 
+
 const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
     const handleClick = function(){
         onPlanetClick(planet);
@@ -16,8 +17,8 @@ const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
 
     return (
     
-    <li id ="planet-list-item" 
-    onClick = {handleClick} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+    <li id ="planet-list-item">
+    {/* onClick = {handleClick} onMouseEnter={handleHover} onMouseLeave={handleLeave}> */}
     <Popup contentStyle={{ width: "450px" }} trigger={<img src={planet.image} alt="Earth image" />} modal nested >
     {close => (
         <div className="modal">

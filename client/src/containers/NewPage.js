@@ -32,8 +32,8 @@ const QuizContainer = ({setCurrentUser, currentUser}) => {
         <div>
 
         <QuestionDisplay key={restartQuiz} resetQuiz={resetQuiz} quizQuestions={quizQuestions} setCurrentUser={setCurrentUser} currentUser ={currentUser} /> 
-        <Link id="link" to="/">Planets</Link>
-        <Redirect id="link" to="/quiz">Restart Quiz</Redirect>
+        
+        {/* <Redirect id="link" to="/quiz">Restart Quiz</Redirect> */}
 
         </div>
         <Link class="link" to="/">Back to Planets</Link>

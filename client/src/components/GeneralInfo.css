@@ -1,6 +1,7 @@
 .star-image {
     height:100px;
     padding:20px;
+    align-self:center;
     
 }
 
@@ -12,7 +13,7 @@
     border-color: white;
     color:#151e3d;
     border-radius: 25px;
-    width: 120px;
+    width: 200px;
     height:140px;
     overflow:scroll;
     overflow-x:hidden;
@@ -20,7 +21,8 @@
     
 }
 
-star-info-box {
+.star-info-box {
     display:flex;
     flex-wrap: nowrap;
+    width:500px;
 }

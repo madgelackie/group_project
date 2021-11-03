@@ -3,6 +3,8 @@ import { getUsers, postUser } from "../services/UserService"
 import UserSelect from "../components/UserSelect";
 import {Link} from "react-router-dom";
 
+import './User.css';
+
 
 const UserContainer = ({setCurrentUser, currentUser}) => {
     
@@ -41,9 +43,15 @@ const UserContainer = ({setCurrentUser, currentUser}) => {
 
     return (
         <div>
-        <h2>Are you new to Space Camp? Sign-up here then click on your name below:</h2>
-        <form onSubmit={onSubmit} id="user-form">
-        <div>
+        <div id = "user-links">
+        <Link class="link" to="/">Planets</Link>
+        <Link class="link" to="/quiz">Quiz</Link> 
+        </div>
+        <h2 class = "user-page-text">Are you new to Space Camp? Sign-up here then click on your name below:</h2>
+        
+        <form onSubmit={onSubmit} id="user-form"class="form">
+        <div id = "sub-form">
+        <div class= "user-data">
             <label >What is your name?</label>
             <input 
             onChange={handleNameChange} 
@@ -52,7 +60,7 @@ const UserContainer = ({setCurrentUser, currentUser}) => {
             required
             type="text" />
         </div>
-        <div>    
+        <div class= "user-data">    
             <label>How old are you?</label>
             <input
             onChange={handleAgeChange} 
@@ -63,12 +71,12 @@ const UserContainer = ({setCurrentUser, currentUser}) => {
             />
         </div>
         <div>
-            <button type="sumbit" value="Submit">Submit</button>
+            <button id="submit" type="submit" value="Submit">Submit</button>
+        </div>
         </div>
         </form>
         {users ? <UserSelect users={users} onUserSelected={onUserSelected}/> :null} 
-        <Link id="link" to="/">Planets</Link>
-        <Link id="link" to="/quiz">Quiz</Link>     
+            
         </div>
         
     )
