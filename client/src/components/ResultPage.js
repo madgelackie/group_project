@@ -4,8 +4,20 @@ import React from "react";
 
 const ResultPage = ({correctAnswerCounter}) =>{
 
+    const onSubmit = () => {
+        addQuizScore(correctAnswerCounter)
+    }
+
     return(
-        `The result is ${correctAnswerCounter}`
+        <>
+        `Well done you scored {correctAnswerCounter}`
+
+        <button onSubmit={onSubmit} >Submit your score</button>
+
+        </>
+
+
+        
     )
 }
 
