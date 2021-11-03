@@ -18,12 +18,16 @@ const QuestionDisplay = ({quizQuestions, setCurrentUser, currentUser, resetQuiz}
             updatedUser.score += correctAnswerCounter
             setCurrentUser(updatedUser)
             updateUser(updatedUser)
-            setActiveQuestionIndex(0)              
+            setActiveQuestionIndex(11)              
         } 
         
         
     });
 
+    const handleReset = () => {
+        setActiveQuestionIndex(0)
+        resetQuiz()
+    }
 
     const answerSelected = (isCorrect) => {
         setActiveQuestionIndex(activeQuestionIndex + 1);
@@ -45,9 +49,9 @@ const QuestionDisplay = ({quizQuestions, setCurrentUser, currentUser, resetQuiz}
         <div>
             <ul>
                 {questionItems[activeQuestionIndex]}
-                {displayResult ? <ResultPage displayResult={displayResult} correctAnswerCounter={correctAnswerCounter}/>: null}
+                {displayResult ? <ResultPage currentUser={currentUser} displayResult={displayResult} correctAnswerCounter={correctAnswerCounter}/>: null}
             </ul>
-            <button onClick={resetQuiz}>Restart Quiz</button>
+            <button onClick={handleReset}>Restart Quiz</button>
         </div>
     )
     }

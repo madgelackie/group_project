@@ -13,16 +13,20 @@ const QuizContainer = ({setCurrentUser, currentUser}) => {
     useEffect(() => {
         return fetch(baseURL)
         .then(res => res.json())
-        .then(questions => setQuizQuestions(questions), [])
-    },[restartQuiz])
+        .then(questions => {
+            console.log("Reset questions");
+            setQuizQuestions([...questions])})
+    },[])
 
     const resetQuiz = () => {
+        // setQuizQuestions([])
         setRestartQuiz(!restartQuiz)
+
     }
 
     return (
         <div>
-        <QuestionDisplay resetQuiz={resetQuiz} quizQuestions={quizQuestions} setCurrentUser={setCurrentUser} currentUser ={currentUser} /> 
+        <QuestionDisplay key={restartQuiz} resetQuiz={resetQuiz} quizQuestions={quizQuestions} setCurrentUser={setCurrentUser} currentUser ={currentUser} /> 
         <Link id="link" to="/">Planets</Link>
         <Redirect id="link" to="/quiz">Restart Quiz</Redirect>
         </div>
