@@ -50,7 +50,7 @@ const SolarSystemContainer = () => {
     useEffect(() => {
         setTimeout(() => {
             setTimedPopup(true);
-        }, 3000)
+        }, 1000)
     }, []);
 
 
@@ -79,9 +79,11 @@ const SolarSystemContainer = () => {
     return (
         <>  
         <div class = "links">
-            <Link class="link" to="/quiz">Take a Quiz</Link>
-            <br></br>
             <Link class="link" to="/user">User Page</Link>
+            <br></br>
+            <Link class="link" to="/quiz">Take a Quiz</Link>
+            
+            
             </div>
         <div id = "main-container">
             <div id = "star-container">

@@ -79,12 +79,23 @@ color: white;}
     height: 200px;
   }
 
+  @keyframes logo{
+    0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+  }
+
     #logo{ 
       font-size: 100px;
       margin-right:auto;
       margin-left:auto;
       font-family: Monoton;
       color:#fcd12a;
+      animation-name: logo;
+      animation-duration: 5s;
       
     }
 
