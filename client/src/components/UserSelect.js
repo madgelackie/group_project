@@ -12,7 +12,7 @@ const UserSelect = ({users, onUserSelected}) => {
 
     return (
         <>
-        <h2>Have you already signed-up? Select your name from the list:</h2>
+        <h2 class = "user-page-text">Have you already signed-up? Select your name from the list:</h2>
         <select defaultValue="" onChange={handleChange}>
             <option value="">Choose name</option>
             {userOptions}

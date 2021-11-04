@@ -2,7 +2,7 @@
 const QuestionItem = ({question, answerSelected}) => {
 
     const answerElements = question.answerOptions.map((answer) => {
-        return <button onClick={() => answerSelected(answer.isCorrect)}>{answer.answerText}</button>
+        return <button id ="button-answers" onClick={() => answerSelected(answer.isCorrect)}>{answer.answerText}</button>
 
     }) 
 

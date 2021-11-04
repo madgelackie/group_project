@@ -10,7 +10,15 @@ color: white;}
     padding:10px;
     border-style: solid;
     border-color: white;
-    
+    border-radius: 25px;
+    height:400px;
+    overflow:scroll;
+    overflow-x:hidden;
+    position:relative;
+    bottom:-80px;
+    left:400px;
+    box-shadow: 5px 10px 18px 10px white;
+
   }
   .modal > .header {
     width: 100%;
@@ -27,14 +35,14 @@ color: white;}
     
   }
   .modal > .actions {
-    width: 100%;
+    width: 50%;
     padding: 10px 5px;
     margin: auto;
     text-align: center;
   }
   .modal > .close {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     display: block;
     padding: 2px 5px;
     line-height: 20px;
@@ -71,12 +79,23 @@ color: white;}
     height: 200px;
   }
 
+  @keyframes logo{
+    0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+  }
+
     #logo{ 
       font-size: 100px;
       margin-right:auto;
       margin-left:auto;
       font-family: Monoton;
       color:#fcd12a;
+      animation-name: logo;
+      animation-duration: 5s;
       
     }
 

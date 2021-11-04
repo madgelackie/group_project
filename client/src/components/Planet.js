@@ -1,6 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 
+
 const Planet = ({planet, onPlanetClick, onPlanetHover, onPlanetLeave}) =>{
     const handleClick = function(){
         onPlanetClick(planet);
