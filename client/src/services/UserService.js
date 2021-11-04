@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:5000/api/users"
+const baseURL = "http://localhost:5000/api/users/"
 
 export const postUser = (payload) => {
     return fetch(baseURL, {
@@ -19,13 +19,15 @@ export const getUsersbyID = (user) => {
         .then(res => {res.json()})
 }
 
-export const updateUser = (user) => {
-    return fetch(baseURL + user._id, {
+export const updateUser = function (user) {
+    // const idAddress = '/' + user._id
+    // console.log(baseURL + idAddress)
+    fetch(baseURL + user._id, {
         method: 'PUT',
         body: JSON.stringify(user),
         headers: {'Content-Type': 'application/json'}
         })
-        .then(res => {res.json()})
+        .then(res => res.json())
 }
 
 
