@@ -44,15 +44,17 @@ const createRouter = function (collection) {
     });
 
     router.put('/:id', (req, res) => {
+        console.log("UPDATE HIT!", req.body)
         const id = req.params.id;
         const updatedData = req.body;
+        delete updatedData._id;
         collection
         .updateOne(
             {_id: ObjectId(id)},
             { $set: updatedData }
         )
         .then((result) => {
-            res.json(result)
+            res.json(result);
         })
         .catch((err) => {
             console.error(err);
