@@ -14,10 +14,9 @@ const QuestionDisplay = ({quizQuestions, setCurrentUser, currentUser, resetQuiz}
     useEffect(() => {
         if (activeQuestionIndex === 10) {
             setDisplayResult(true)
-            let updatedUser = currentUser
-            updatedUser.score += correctAnswerCounter
-            setCurrentUser(updatedUser)
-            updateUser(updatedUser)
+            currentUser.score += correctAnswerCounter
+            setCurrentUser(currentUser)
+            updateUser(currentUser)
             setActiveQuestionIndex(11)              
         } 
         

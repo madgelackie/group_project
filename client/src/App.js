@@ -12,13 +12,13 @@ function App() {
 
   const setGlobalUser = ((user) => {
     console.log("setGlobalUser");
-    setCurrentUser(user)} )
+    setCurrentUser({...user})} )
 
   return (
     <>
     {currentUser ? <h3>Hello {currentUser.name}</h3> : null}
-    {/* {currentUser.score === 5 ? <h3>Score: {currentUser.score}</h3> : null} */}
-    {/* {currentUser.spaceClass !== null > 0 ? <h3>Space Class: Cadet</h3> : null} */}
+    {currentUser  ? <h3>Score: {currentUser.score}</h3> : null}
+    {currentUser ? <h3>Space Class: {currentUser.spaceClass}</h3> : null}
     <header id="header">
       <div id = "header-image">
         <h1 id="logo">SPACE CAMP</h1>
