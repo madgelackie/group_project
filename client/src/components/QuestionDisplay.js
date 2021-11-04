@@ -46,12 +46,12 @@ const QuestionDisplay = ({quizQuestions, setCurrentUser, currentUser, resetQuiz}
 
     if (quizQuestions){
     return (
-        <div>
+        <div id ="quiz">
             <ul>
                 {questionItems[activeQuestionIndex]}
                 {displayResult ? <ResultPage currentUser={currentUser} displayResult={displayResult} correctAnswerCounter={correctAnswerCounter}/>: null}
             </ul>
-            <button onClick={handleReset}>Restart Quiz</button>
+            <button id = "reset" onClick={handleReset}>Restart Quiz</button>
         </div>
     )
     }
