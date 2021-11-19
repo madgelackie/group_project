@@ -14,7 +14,7 @@ Researching and implementing the React Router extension.
 Reconfiguring the database.
 Linking the front-end to the database.
 
-###To open:
+### To open:
 
 In the terminal, whilst in the project directory run:
 
