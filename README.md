@@ -11,5 +11,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Area's of personal focus:
 Researching and implementing the React Router extension.  
-Reconfiguring the database
-Linking the front-end to the database
+Reconfiguring the database.
+Linking the front-end to the database.
