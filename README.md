@@ -9,7 +9,18 @@ A user should be able to:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Area's of personal focus:
+## Area's of personal focus:
 Researching and implementing the React Router extension.  
 Reconfiguring the database.
 Linking the front-end to the database.
+
+###To open:
+
+In the terminal, whilst in the project directory run:
+
+`npm start`
+
+Open http://localhost:3000 to view in the browser.
+
+
+
