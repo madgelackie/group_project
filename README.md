@@ -16,11 +16,11 @@ Linking the front-end to the database.
 
 ### To open:
 
-In the terminal, whilst in the project directory run:
+In the terminal, whilst in the server directory run:
 
-`npm start`
+`npm start`.
+
+Repeat this, whilst in the client directory.
 
 Open http://localhost:3000 to view in the browser.
-
-
 
